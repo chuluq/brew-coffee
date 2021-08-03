@@ -36,8 +36,8 @@ export default class StackNavigation extends Component {
               fontFamily: 'Poppins-Medium',
               fontSize: 16,
               color: colors.primaryText,
-              alignSelf: 'center',
             },
+            headerTitleAlign: 'center',
           })}
         />
         <Stack.Screen

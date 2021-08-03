@@ -8,9 +8,13 @@ export default StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    fontFamily: 'Poppins-Medium',
     color: colors.primaryText,
     textTransform: 'capitalize',
     marginHorizontal: 20,
-    marginTop: 16,
+  },
+  carts: {
+    marginHorizontal: 20,
+    marginTop: 25,
   },
 });
