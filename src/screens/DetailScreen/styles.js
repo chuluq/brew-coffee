@@ -36,6 +36,7 @@ export default StyleSheet.create({
   title: {
     color: colors.primaryText,
     textTransform: 'capitalize',
+    fontFamily: 'DMSans-Medium',
   },
   shotType: {
     flexDirection: 'row',
@@ -50,6 +51,7 @@ export default StyleSheet.create({
     fontSize: 12,
     textAlign: 'center',
     color: colors.primaryText,
+    fontFamily: 'DMSans-Medium',
   },
   coffeeTypeIcon: {
     flexDirection: 'row',
@@ -89,8 +91,13 @@ export default StyleSheet.create({
     marginHorizontal: 20,
     marginBottom: 24,
   },
+  totalTitle: {
+    color: colors.primaryText,
+    fontFamily: 'Poppins-Medium',
+  },
   price: {
     fontSize: 16,
-    fontWeight: '700',
+    color: colors.primaryText,
+    fontFamily: 'Poppins-SemiBold',
   },
 });

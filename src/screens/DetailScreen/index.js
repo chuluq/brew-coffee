@@ -1,12 +1,5 @@
 import React, {Component} from 'react';
-import {
-  Text,
-  View,
-  Image,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-} from 'react-native';
+import {Text, View, Image, SafeAreaView, ScrollView} from 'react-native';
 
 import Button from '../../components/Button';
 
@@ -17,7 +10,9 @@ export default class DetailScreen extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <ScrollView contentContainerStyle={{flexGrow: 1}}>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{flexGrow: 1}}>
           <View style={styles.bannerWrapper}>
             <Image
               source={require('../../assets/americano.png')}
@@ -87,7 +82,9 @@ export default class DetailScreen extends Component {
           </View>
 
           <View style={styles.totalWrapper}>
-            <Text style={[styles.title, {fontSize: 16}]}>Total Amount</Text>
+            <Text style={[styles.totalTitle, {fontSize: 16}]}>
+              Total Amount
+            </Text>
             <Text style={styles.price}>$3.00</Text>
           </View>
 

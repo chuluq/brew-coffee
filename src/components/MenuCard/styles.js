@@ -14,6 +14,7 @@ export default StyleSheet.create({
   title: {
     color: colors.primaryText,
     fontSize: 14,
+    fontFamily: 'DMSans-Medium',
     marginTop: 12,
   },
 });

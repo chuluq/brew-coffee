@@ -12,8 +12,7 @@ export default StyleSheet.create({
   },
   buttonTitle: {
     color: '#fff',
-    fontWeight: '700',
     textTransform: 'capitalize',
-    letterSpacing: 1,
+    fontFamily: 'Poppins-Medium',
   },
 });

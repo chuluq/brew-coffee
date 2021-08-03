@@ -8,7 +8,7 @@ export default StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     justifyContent: 'space-between',
     marginHorizontal: 20,
     marginTop: 16,
@@ -17,12 +17,14 @@ export default StyleSheet.create({
   greeting: {
     color: colors.secondaryText,
     fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
     textTransform: 'capitalize',
   },
   username: {
     color: colors.primaryText,
     fontSize: 18,
     fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
     textTransform: 'capitalize',
   },
   icon: {
@@ -44,6 +46,7 @@ export default StyleSheet.create({
   },
   loyaltyDetailsText: {
     color: colors.secondaryText,
+    fontFamily: 'Poppins-Medium',
   },
   loyaltyIcon: {
     flexDirection: 'row',
@@ -69,6 +72,7 @@ export default StyleSheet.create({
     marginTop: 16,
     color: colors.secondaryText,
     fontSize: 16,
+    fontFamily: 'Poppins-Medium',
   },
   menuCard: {
     marginHorizontal: 20,
