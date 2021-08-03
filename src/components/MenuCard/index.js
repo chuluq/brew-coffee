@@ -5,7 +5,7 @@ import styles from './styles';
 export default class MenuCard extends Component {
   render() {
     return (
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity style={styles.card} onPress={this.props.handlePress}>
         <Image source={require('../../assets/americano.png')} />
         <Text style={styles.title}>Americano</Text>
       </TouchableOpacity>

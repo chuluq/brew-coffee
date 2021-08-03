@@ -76,7 +76,9 @@ export default class HomeScreen extends Component {
         <View style={styles.menuWrapper}>
           <Text style={styles.menuTitle}>Choose your coffee</Text>
           <View style={styles.menuCard}>
-            <MenuCard />
+            <MenuCard
+              handlePress={() => this.props.navigation.navigate('Details')}
+            />
             <MenuCard />
             <MenuCard />
             <MenuCard />

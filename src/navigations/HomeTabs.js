@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {HomeStack, RewardStack, OrderStack} from './StackNavigation';
-
-import IonIcon from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import IonIcons from 'react-native-vector-icons/Ionicons';
+
+import HomeScreen from '../screens/HomeScreen';
+import RewardScreen from '../screens/RewardScreen';
+import OrderScreen from '../screens/OrderScreen';
 
 const Tab = createBottomTabNavigator();
 
-export default class BottomNavigation extends Component {
+export default class HomeTabs extends Component {
   render() {
     return (
       <Tab.Navigator
@@ -15,8 +17,8 @@ export default class BottomNavigation extends Component {
           showLabel: false,
         }}>
         <Tab.Screen
-          name="HomeStack"
-          component={HomeStack}
+          name="Home"
+          component={HomeScreen}
           options={{
             tabBarIcon: ({color, size}) => {
               return (
@@ -30,21 +32,21 @@ export default class BottomNavigation extends Component {
           }}
         />
         <Tab.Screen
-          name="RewardStack"
-          component={RewardStack}
+          name="Reward"
+          component={RewardScreen}
           options={{
             tabBarIcon: ({color, size}) => {
-              return <IonIcon name="gift-outline" color={color} size={size} />;
+              return <IonIcons name="gift-outline" color={color} size={size} />;
             },
           }}
         />
         <Tab.Screen
-          name="OrderStack"
-          component={OrderStack}
+          name="Order"
+          component={OrderScreen}
           options={{
             tabBarIcon: ({color, size}) => {
               return (
-                <IonIcon name="receipt-outline" color={color} size={size} />
+                <IonIcons name="receipt-outline" color={color} size={size} />
               );
             },
           }}

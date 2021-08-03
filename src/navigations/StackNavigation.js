@@ -1,48 +1,22 @@
 import React, {Component} from 'react';
+import {Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../screens/HomeScreen';
-import RewardScreen from '../screens/RewardScreen';
-import OrderScreen from '../screens/OrderScreen';
+
+import HomeTabs from './HomeTabs';
+import DetailScreen from '../screens/DetailScreen';
 
 const Stack = createStackNavigator();
 
-export class HomeStack extends Component {
+export default class StackNavigation extends Component {
   render() {
     return (
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={HomeScreen}
+          name="HomeTabs"
+          component={HomeTabs}
           options={{headerShown: false}}
         />
-      </Stack.Navigator>
-    );
-  }
-}
-
-export class RewardStack extends Component {
-  render() {
-    return (
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Reward"
-          component={RewardScreen}
-          options={{headerShown: false}}
-        />
-      </Stack.Navigator>
-    );
-  }
-}
-
-export class OrderStack extends Component {
-  render() {
-    return (
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Order"
-          component={OrderScreen}
-          options={{headerShown: false}}
-        />
+        <Stack.Screen name="Details" component={DetailScreen} />
       </Stack.Navigator>
     );
   }
