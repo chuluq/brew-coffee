@@ -7,14 +7,18 @@ import HomeScreen from '../screens/HomeScreen';
 import RewardScreen from '../screens/RewardScreen';
 import OrderScreen from '../screens/OrderScreen';
 
+import {colors} from '../constants';
+
 const Tab = createBottomTabNavigator();
 
-export default class HomeTabs extends Component {
+export default class Tabs extends Component {
   render() {
     return (
       <Tab.Navigator
         tabBarOptions={{
           showLabel: false,
+          activeTintColor: colors.primaryBackground,
+          inactiveTintColor: colors.secondaryText,
         }}>
         <Tab.Screen
           name="Home"

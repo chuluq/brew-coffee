@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import HomeTabs from './HomeTabs';
+import Tabs from './Tabs';
 import DetailScreen from '../screens/DetailScreen';
 
 const Stack = createStackNavigator();
@@ -12,8 +12,8 @@ export default class StackNavigation extends Component {
     return (
       <Stack.Navigator>
         <Stack.Screen
-          name="HomeTabs"
-          component={HomeTabs}
+          name="Tabs"
+          component={Tabs}
           options={{headerShown: false}}
         />
         <Stack.Screen name="Details" component={DetailScreen} />
